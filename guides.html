@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>מדריכים | צוות ה-AI וויזדי</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html"><img src="assets/logo-wizdi.png" alt="Wizdi" /><span class="brand-text">צוות ה-AI</span></a>
+    <div class="nav-links">
+      <a href="index.html">בית</a>
+      <a href="characters.html">דמויות וקולות</a>
+      <a href="guides.html" class="active">מדריכים</a>
+      <a href="videos.html">גלריית סרטונים</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-head">
+  <h1>מדריכים</h1>
+  <p>חומרי עזר לעבודה על הסקילים וב-Google Flow.</p>
+</section>
+
+<div class="container">
+
+  <p style="text-align:center; color: var(--muted); margin: -8px 0 28px;">לחצו על כל כרטיס כדי לפתוח אותו.</p>
+
+  <!-- ============ קישורים וגישה ============ -->
+  <h2 class="category-heading">🔗 קישורים וגישה</h2>
+
+  <div class="accordion-item panel open no-print">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="true">
+        <span class="accordion-title">קישורים חשובים</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+        <div class="resource-links">
+          <a class="resource-link" href="https://wizdi-gen.web.app/login" target="_blank" rel="noopener">⭐ Wizdi AI - הסוכן שמעלים אליו את התכנים</a>
+          <a class="resource-link" href="https://drive.google.com/drive/folders/1nNHzamO_wU5Oc2Q1OwS3dWFeMt11e46E" target="_blank" rel="noopener">📁 תיקיית דרייב לפיתוח הסוכנים</a>
+          <a class="resource-link" href="https://github.com/maya-papo-ann/learning-unit-skill" target="_blank" rel="noopener">🐙 GitHub של הסקיל</a>
+          <a class="resource-link" href="https://ann-education-company.monday.com/boards/5097244505" target="_blank" rel="noopener">📋 בורד מאנדיי לניהול הפיתוח</a>
+          <a class="resource-link" href="https://notebooklm.google.com/notebook/6e6b4903-9a50-4def-ba80-fbd18e8be4f2" target="_blank" rel="noopener">📓 NotebookLM - תכנית לימודים במדעים (ז'-ח')</a>
+        </div>
+        <p style="color: var(--muted); font-size: 0.9rem; margin-top: 10px;">בנוטבוק הועלתה תכנית הלימודים במדעים לכיתות ז' ו-ח' - אפשר להשתמש בצ'אט שלו כדי לשאול שאלות ולהיעזר בו בזמן הפיתוח.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item panel no-print">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="false">
+        <span class="accordion-title">🔒 סיסמאות</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+        <p style="color: var(--muted); font-size: 0.9rem;">שימו לב: זו לא הגנה אמיתית (מי שיפתח את קוד הדף יוכל לגשת לנתונים) - זה רק מונע הצגה אוטומטית על המסך. לחצו להצגה, ותצטרכו את קוד הגישה הפנימי.</p>
+        <div id="pw-gate">
+          <button id="pw-reveal-btn" class="print-btn" type="button">🔓 הצג סיסמאות</button>
+        </div>
+        <div id="pw-content" style="display:none; margin-top:16px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ סקילים ============ -->
+  <h2 class="category-heading">🧩 סקילים</h2>
+
+  <div class="accordion-item panel">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="false">
+        <span class="accordion-title">🧠 מדריך מקוצר - Cowork</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+        <p>Cowork היא האפליקציה של קלוד לעבודה עם סקילים - כאן מתקינים ומפעילים את הסקילים שהצוות עובד איתם (learning-unit-creator, avatar-video-creator, ועוד).</p>
+        <ol class="step-list">
+          <li><strong>כניסה</strong><span class="muted"> - נכנסים לאפליקציית Cowork עם משתמש הצוות.</span></li>
+          <li><strong>הגדרות ← לשונית הכישורים</strong><span class="muted"> - Customize ← Skills - כאן נמצאת רשימת כל הסקילים המותקנים.</span></li>
+          <li><strong>שתי דרכים להתקין סקיל</strong><span class="muted"> - (1) העלאת קובץ <code>.skill</code> ידנית - לוחצים ➕ ← "העלאת כישור" ובוחרים את הקובץ (כמו avatar-video-creator). (2) התקנה מ-GitHub באמצעות skill-creator - כותבים לקלוד את פקודת ההתקנה עם הקישור ל-repo (כמו learning-unit-creator, מפורט למטה).</span></li>
+          <li><strong>רענון</strong><span class="muted"> - לאחר ההתקנה מרעננים/מפעילים מחדש את Cowork - הסקיל החדש יופיע ברשימה.</span></li>
+          <li><strong>הפעלת סקיל</strong><span class="muted"> - פותחים שיחה חדשה וכותבים משפט שמתאר את מה שרוצים לעשות (כל סקיל "מזהה" את עצמו לפי מילות מפתח) - הוא ייקח את השיחה משם.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item panel printable">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="false">
+        <span class="accordion-title">תהליך העבודה על סקילים - מדריך מפורט</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+      <button class="print-btn no-print" onclick="event.stopPropagation(); window.print()">🖨️ הדפסה</button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+
+    <p class="char-section-label">תהליך העבודה - מבט על (5 שלבים)</p>
+    <ol class="step-list">
+      <li><strong>העלאת חומרים לבורד</strong><span class="muted"> - הצוות הפדגוגי מעלה לבורד "720 - Agent Production" את נושאי היחידות וחומרי הלימוד. לכל פריט מגדירים מקצוע, כיתה, נושא, מטרת-על, מטרות ביניים, מושגים, ידע קודם וקבצי מקור. כשמוכן - מקדמים סטטוס ל"עבר אפיון פדגוגי".</span></li>
+      <li><strong>יצירת מערך בסקיל</strong><span class="muted"> - המפתח/ת פותח/ת שיחה ב-Claude ומפעיל/ה את הסקיל <code>learning-unit-creator</code> ("תבני לי סוכן עבור פריט מס' X בלוח"). הסקיל מנהל ראיון של 8 שלבים, מציג שלד לאישור, ומפיק קובץ Excel מלא ב-Drive.</span></li>
+      <li><strong>סקירה פדגוגית</strong><span class="muted"> - הצוות הפדגוגי בודק את ה-Excel לפי שלוש נקודות: דיוק פדגוגי, התאמה לקהל היעד, ונאמנות לחומר המקור. לאחר מכן מקדמים ל"הפקת הסוכן".</span></li>
+      <li><strong>הפקה במערכת Wizdi</strong><span class="muted"> - צוות הפיתוח מפיק את הרכיבים (סרטונים, אינפוגרפיקות, תמונות) ומטמיע אותם ב-Wizdi AI. עקרון העל: עקביות ויזואלית - אותן דמויות, אותה פלטה, אותו סגנון לאורך כל היחידה.</span></li>
+      <li><strong>QA פדגוגי סופי</strong><span class="muted"> - הצוות הפדגוגי עובר על היחידה הבנויה כמו לומד: כל הרכיבים נטענים תקין, המשובים הגיוניים ובגובה העיניים, התוכן נאמן למקור, והיחידה עונה על מטרות הלמידה. רק אז - "מוכן להפצה".</span></li>
+    </ol>
+
+    <p class="char-section-label" style="margin-top:22px;">טיפים שכדאי להכיר</p>
+    <ul class="step-list" style="list-style:none; padding:0;">
+      <li style="padding-right:0;"><strong>מבנה הקבצים ב-Drive נוצר אוטומטית</strong><span class="muted"> - "Wizdi - סוכני למידה / [מקצוע] / [כיתה] / [מספר] - [שם סוכן]". אל תשנו ידנית.</span></li>
+      <li style="padding-right:0;"><strong>איך מבקשים מהסקיל לחזור על שלב</strong><span class="muted"> - כותבים לסקיל "תחזור על שלב X" או "תתקן את הסעיף הזה ככה..." - הוא מחזיר תוצאה מתוקנת.</span></li>
+      <li style="padding-right:0;"><strong>לולאת השיפור של הסקיל</strong><span class="muted"> - בסיום כל יחידה, הסקיל כותב סיכום סשן ל-GitHub: מה עבד, איפה היה ספק, ומה הוא ממליץ לשפר.</span></li>
+    </ul>
+
+    <p class="char-section-label" style="margin-top:22px;">איך מתקינים את הסקיל מ-GitHub</p>
+    <ol class="step-list">
+      <li><strong>פתחו שיחה חדשה</strong><span class="muted"> - ב-Claude Desktop או ב-Cowork.</span></li>
+      <li><strong>הדביקו את פקודת ההתקנה</strong><span class="muted"> - "תשתמש ב-skill-creator כדי להתקין סקיל מ-GitHub: שם הסקיל: learning-unit-creator, https://github.com/maya-papo-ann/learning-unit-skill"</span></li>
+      <li><strong>גישה לפעם הראשונה</strong><span class="muted"> - אם זו ההתקנה הראשונה שלכם, נדרשת גישת קריאה ל-repo הפרטי - לבקש ממאיה.</span></li>
+      <li><strong>קלוד עושה את השאר</strong><span class="muted"> - מוריד את הקבצים מ-GitHub, מריץ בדיקת תקינות (validation), ומתקין את הסקיל אצלכם.</span></li>
+      <li><strong>מאמתים שההתקנה הצליחה</strong><span class="muted"> - פותחים שיחה חדשה ושואלים "מה יש בסקיל learning-unit-creator?" - קלוד יציג רשימת קבצים. לוודא שמופיעים: SKILL.md, references/classes/class_7.md, references/subjects/science.md, references/output_format.md, ותיקיית lessons/.</span></li>
+    </ol>
+
+    <p class="char-section-label" style="margin-top:22px;">איך מעדכנים את הסקיל לגרסה חדשה</p>
+    <ul class="step-list" style="list-style:none; padding:0;">
+      <li style="padding-right:0;"><strong>הודעת הפתיחה לעדכון</strong><span class="muted"> - כשמאיה משדרגת את הסקיל, פותחים שיחה חדשה ומדביקים: <code>תשתמש ב-creator-skill כדי לעדכן את הסקיל מ-GitHub: https://github.com/maya-papo-ann/learning-unit-skill</code> - קלוד יזהה שיש גרסה חדשה ויעדכן.</span></li>
+      <li style="padding-right:0;"><strong>לא לערוך ידנית</strong><span class="muted"> - קבצים מקומיים של הסקיל נמחקים בכל עדכון. כל השינויים מגיעים מצד אחד (מאיה דוחפת ל-GitHub) וכולם מקבלים אותם בהפעלה הבאה.</span></li>
+    </ul>
+
+    <p class="char-section-label" style="margin-top:22px;">שמירת קובץ האקסל בדרייב</p>
+    <ol class="step-list">
+      <li><strong>לרוב זו פעולה ידנית</strong><span class="muted"> - בדרך כלל הסקיל <strong>לא</strong> שומר את הקובץ בדרייב אוטומטית - המפתח/ת צריך/ה להוריד את קובץ האקסל שהסקיל הפיק, ולהעלות אותו בעצמו/ה לדרייב.</span></li>
+      <li><strong>שמרו על מבנה התיקיות הקבוע</strong><span class="muted"> - בתוך תיקיית האב המשותפת "Wizdi - סוכני למידה", לפי המבנה: <code>Wizdi - סוכני למידה / [מקצוע] / [כיתה] / [מספר] - [שם הסוכן] / [שם הסוכן] - מערך.xlsx</code>. אל תשנו את המבנה הזה.</span></li>
+      <li><strong>עדכון מאנדיי</strong><span class="muted"> - לוודא שהקישור לקובץ מעודכן בבורד, ושהסטטוס תואם למה שבוצע בפועל.</span></li>
+    </ol>
+
+    <div class="resource-links no-print" style="margin-top:22px;">
+      <a class="resource-link" href="https://docs.google.com/presentation/d/1_obs2llPap47dkdKPJvna2RCHQ1wKBWHIOPXBmJI-88/edit" target="_blank" rel="noopener">📊 המצגת המלאה (12 שקפים)</a>
+      <a class="resource-link" href="https://drive.google.com/file/d/1aOYDg9fgUUFrKv1lvWA1z_viwQdF2EIV/view" target="_blank" rel="noopener">📄 מדריך התקנה ושימוש בסקיל learning-unit-creator</a>
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Google Flow ============ -->
+  <h2 class="category-heading">🎬 Google Flow</h2>
+
+  <div class="accordion-item panel">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="false">
+        <span class="accordion-title">🌊 מדריך מקוצר - Google Flow</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+        <ol class="step-list">
+          <li><strong>כניסה לכלי</strong><span class="muted"> - נכנסים ל-Google Flow עם חשבון גוגל, ובוחרים "יצירה חדשה".</span></li>
+          <li><strong>בחירת מודל</strong><span class="muted"> - לאווטאר מדבר (הדמויות) בוחרים במודל <code>Omni Flash</code>.</span></li>
+          <li><strong>הוספת תמונת רפרנס</strong><span class="muted"> - בשורת הפרומפט התחתונה, לוחצים על ה-<code>+</code> ומעלים את תמונת הדמות. היא תופיע כתמונה ממוזערת לצד הפרומפט - זה המקום היחיד להוסיף אותה, ואותה תמונה בכל שוט.</span></li>
+          <li><strong>בחירת קול</strong><span class="muted"> - פותחים <code>Voices</code>, בוחרים את קול הדמות (טבלה בעמוד <a href="characters.html">דמויות וקולות</a>), אפשר להוסיף כיוון טון קצר ב-<code>Customize Performance (optional)</code>, ואז <code>Select voice</code>.</span></li>
+          <li><strong>כתיבת הפרומפט</strong><span class="muted"> - בשדה הראשי מדביקים את הפרומפט המלא (סביבה, פעולה, מצלמה, סגנון) + משפט הקריינות המדויק + פרומפט הסגנון הקבוע: <code>High quality 3D animation, consistent character appearance, cinematic lighting</code></span></li>
+          <li><strong>הגדרות</strong><span class="muted"> - יחס מסך <code>16:9</code>, אורך <code>10s</code>, ולהתחיל מ-<code>x1</code> לבדיקה מהירה וזולה, ורק כשמרוצים - <code>x4</code> לגרסה סופית.</span></li>
+          <li><strong>אם נחסם ע"י פילטר</strong><span class="muted"> - לשנות מילים ולא כוונה (למשל "children" ל-"characters"), ולנסות שוב.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item panel printable">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="false">
+        <span class="accordion-title">שלבים ליצירת סרטון בגוגל פלואו - מדריך מפורט</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+      <button class="print-btn no-print" onclick="event.stopPropagation(); window.print()">🖨️ הדפסה</button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+
+    <p class="char-section-label">אפשרות 1: חילוץ הקריינות בלבד מקובץ האקסל</p>
+    <ol class="step-list">
+      <li><strong>פתחו את קובץ האקסל</strong><span class="muted"> - שהפיק הסקיל learning-unit-creator, בעמודת סקריפט הווידאו / הקריינות.</span></li>
+      <li><strong>העתיקו רק את משפטי הקריינות</strong><span class="muted"> - הטקסט שהדמות אומרת בפועל - לא שאלות, לא פרומפטים לאינפוגרפיקה ולא שאר התוכן.</span></li>
+      <li><strong>הדביקו ב-AGENT בגוגל פלואו</strong><span class="muted"> - את משפטי הקריינות שהעתקתם.</span></li>
+      <li><strong>הוסיפו את פרומפט הסגנון הקבוע</strong><span class="muted"> - <code>High quality 3D animation, consistent character appearance, cinematic lighting</code></span></li>
+      <li><strong>בחרו את קול הדמות המתאימה</strong><span class="muted"> - לפי הטבלה בעמוד <a href="characters.html">דמויות וקולות</a> - ווידאו שלא הוגדר אווטאר.</span></li>
+    </ol>
+
+    <p class="char-section-label" style="margin-top:22px;">אפשרות 2: הסקיל של יוני - avatar-video-creator</p>
+    <p>סקיל מפורט יותר, שמלווה שלב-אחר-שלב (Shot by shot) יצירת סרטון אווטאר מדבר - מתמונת ייחוס אחת נעולה, בשפה שבוחרים, עם מעקב הפקה חי ב-HTML. מתאים כשרוצים שליטה מדויקת יותר בכל שוט ולא רק הדבקת קריינות.</p>
+
+    <p class="char-section-label" style="margin-top:14px;">התקנה כסקיל ב-Cowork</p>
+    <ol class="step-list">
+      <li><strong>הורידו את קובץ ה-zip</strong><span class="muted"> - וחלצו ממנו. שימו לב: צריך את הקובץ שמסתיים ב-<code>.skill</code> - לא את קובץ ה-md.</span></li>
+      <li><strong>Customize ← לשונית הכישורים</strong><span class="muted"> - בתוך Cowork, היכנסו להגדרות (Customize) ואז ללשונית הכישורים (Skills).</span></li>
+      <li><strong>העלאת כישור</strong><span class="muted"> - לחצו על ➕ ובחרו "העלאת כישור" (Upload a skill), ובחרו את הקובץ <code>avatar-video-creator.skill</code>.</span></li>
+      <li><strong>רעננו את Cowork</strong><span class="muted"> - הכישור יופיע ברשימה ✅</span></li>
+      <li><strong>הפעלה</strong><span class="muted"> - כתבו "אני רוצה ליצור סרטון אווטאר" - הסקיל ילווה אתכם שלב אחר שלב.</span></li>
+    </ol>
+
+    <p style="color: var(--muted); font-size: 0.9rem;">לא רוצים להתקין? פתחו שיחה חדשה והדביקו את כל התוכן של הקובץ <code>AI_VIDEO_WORKFLOW_UNIVERSAL.md</code> (מתוך אותו zip) - זה יעבוד מיד, אבל רק לשיחה הזו.</p>
+
+    <div class="resource-links no-print" style="margin-top:14px;">
+      <a class="resource-link" href="assets/skills/avatar-video-creator.zip" download>📦 קובץ הסקיל (zip) - להורדה</a>
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ כלים נוספים ============ -->
+  <h2 class="category-heading">🎨 כלים נוספים</h2>
+
+  <div class="accordion-item panel">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="false">
+        <span class="accordion-title">✂️ מדריך מקוצר - CapCut</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+        <ol class="step-list">
+          <li><strong>פרויקט חדש</strong><span class="muted"> - יוצרים פרויקט ומייבאים את כל הקבצים (סרטוני ה-AI, תמונות, קול) לספריית המדיה.</span></li>
+          <li><strong>סידור על ציר הזמן</strong><span class="muted"> - גוררים את הקליפים ל-Timeline בסדר הרצוי.</span></li>
+          <li><strong>חיתוך וקיצור</strong><span class="muted"> - עם כלי ה-Split/Trim, מסירים פריימים מיותרים בתחילת/סוף כל קליפ.</span></li>
+          <li><strong>כתוביות</strong><span class="muted"> - Auto captions ליצירה מהירה, ואז עריכה ידנית לדיוק. לשמור על פונט וסטייל אחיד לאורך כל היחידה.</span></li>
+          <li><strong>מוזיקה ואפקטים</strong><span class="muted"> - מהספרייה המובנית, בעוצמה (Volume) נמוכה שלא מתחרה עם הקריינות.</span></li>
+          <li><strong>מעברים</strong><span class="muted"> - Transitions עדינים בין קליפים - לא להעמיס.</span></li>
+          <li><strong>ייצוא</strong><span class="muted"> - Export ברזולוציה וביחס המסך המתאימים ליחידה (16:9 או 9:16).</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item panel">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="false">
+        <span class="accordion-title">🖌️ מדריך מקוצר - אינפוגרפיקות ב-GPT</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+        <ol class="step-list">
+          <li><strong>פתחו שיחה עם יצירת תמונות</strong><span class="muted"> - ב-ChatGPT (GPT-4o / GPT image).</span></li>
+          <li><strong>תארו בפרומפט</strong><span class="muted"> - את הנושא, סוג האינפוגרפיקה (טיימליין / תרשים / השוואה), הטקסטים המדויקים שצריכים להופיע, פלטת הצבעים, והדמות המלווה אם רלוונטי.</span></li>
+          <li><strong>בקשו סטייל שטוח</strong><span class="muted"> - "flat vector infographic style" עם רקע שטוח - כך שהדמות התלת-מימדית תוכל להתבלט מעליו כ"שכבת חזית" (לפי העקרון בעמוד הדמויות).</span></li>
+          <li><strong>בדקו את הטקסט</strong><span class="muted"> - מודלי תמונה נוטים לטעות בטקסט (עברית ואנגלית) - לעבור על התוצר ולתקן, ואם צריך להוסיף/לתקן טקסט בכלי עריכה חוץ כמו Canva.</span></li>
+          <li><strong>עקביות בין אינפוגרפיקות</strong><span class="muted"> - להשתמש באותו פרומפט בסיס לכל היחידה ולשנות רק את התוכן הספציפי - כדי לשמור על סגנון אחיד.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item panel">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="false">
+        <span class="accordion-title">🖼️ אינפוגרפיקות (דוגמאות ותבניות)</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+        <div class="coming-soon">
+          <span class="emoji">🎨</span>
+          <h3>בקרוב</h3>
+          <p>כאן יופיעו אינפוגרפיקות עזר - תבניות, דוגמאות וסגנון עיצוב.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  function setOpenHeight(item) {
+    var body = item.querySelector('.accordion-body');
+    var inner = item.querySelector('.accordion-body-inner');
+    body.style.maxHeight = inner.scrollHeight + 'px';
+  }
+
+  function openItem(item) {
+    item.classList.add('open');
+    item.querySelector('.accordion-toggle').setAttribute('aria-expanded', 'true');
+    setOpenHeight(item);
+  }
+
+  function closeItem(item) {
+    item.classList.remove('open');
+    item.querySelector('.accordion-toggle').setAttribute('aria-expanded', 'false');
+    item.querySelector('.accordion-body').style.maxHeight = '';
+  }
+
+  document.querySelectorAll('.accordion-toggle').forEach(function (btn) {
+    var item = btn.closest('.accordion-item');
+    btn.addEventListener('click', function () {
+      if (item.classList.contains('open')) {
+        closeItem(item);
+      } else {
+        openItem(item);
+      }
+    });
+    if (item.classList.contains('open')) {
+      // set initial height instantly, without animating on page load
+      var body = item.querySelector('.accordion-body');
+      body.style.transition = 'none';
+      setOpenHeight(item);
+      void body.offsetHeight;
+      body.style.transition = '';
+    }
+  });
+
+  // Recalculate height of an already-open accordion item after its content changes
+  // (e.g. the passwords table being revealed inside it).
+  window.refreshOpenAccordion = function (el) {
+    var item = el.closest('.accordion-item');
+    if (item && item.classList.contains('open')) setOpenHeight(item);
+  };
+
+  window.addEventListener('resize', function () {
+    document.querySelectorAll('.accordion-item.open').forEach(setOpenHeight);
+  });
+})();
+</script>
+
+<script>
+(function () {
+  // NOT real security - just avoids showing credentials by default. Change PASSPHRASE below anytime.
+  var PASSPHRASE = "1234";
+  var encoded = "eyJnZW5lcmF0b3JzIjpbeyJsYWJlbCI6Itee15fXldec15wg157Xk9ei15nXnSDXm9eZ16rXlCDXliIsInVzZXIiOiJ3aXpkaWFpNDBAZGVtby5jb20iLCJwYXNzIjoid2l6ZGkwNzM1In0seyJsYWJlbCI6Itee15fXldec15wg157Xk9ei15nXnSDXm9eZ16rXlCDXlyciLCJ1c2VyIjoid2l6ZGlhaTQxQGRlbW8uY29tIiwicGFzcyI6IndpemRpMDMyMiJ9XSwiZWRpdG9ycyI6W3sibmFtZSI6IteQ15PXldeV15QiLCJ1c2VyIjoiRWRpdG9yNTIiLCJwYXNzIjoiJTFZdWcmIn0seyJuYW1lIjoi15LXqNeY15QiLCJ1c2VyIjoiRWRpdG9yNTEiLCJwYXNzIjoiKkRlOG1tIn0seyJuYW1lIjoi16rXlNeZ15zXlCIsInVzZXIiOiJlZGl0b3I1MCIsInBhc3MiOiJxRVYmZzgifSx7Im5hbWUiOiLXoNeY15zXmSIsInVzZXIiOiJFZGl0b3I0OSIsInBhc3MiOiJeejlMS1oifSx7Im5hbWUiOiLXqdeX16giLCJ1c2VyIjoiRWRpdG9yNDgiLCJwYXNzIjoiIXhMcEEzIn0seyJuYW1lIjoi16nXmdeoIiwidXNlciI6IkVkaXRvcjQ3IiwicGFzcyI6ImlHdDQjVyJ9XX0=";
+
+  function render(data) {
+    var html = '<p class="char-section-label">מחוללים</p><table style="width:100%; border-collapse:collapse; font-size:0.9rem;">';
+    data.generators.forEach(function (g) {
+      html += '<tr><td style="padding:6px 8px; border-bottom:1px solid var(--line);">' + g.label + '</td>' +
+        '<td style="padding:6px 8px; border-bottom:1px solid var(--line); direction:ltr; text-align:left;">' + g.user + '</td>' +
+        '<td style="padding:6px 8px; border-bottom:1px solid var(--line); direction:ltr; text-align:left; font-family:monospace;">' + g.pass + '</td></tr>';
+    });
+    html += '</table><p class="char-section-label" style="margin-top:18px;">עורכים</p><table style="width:100%; border-collapse:collapse; font-size:0.9rem;">';
+    data.editors.forEach(function (e) {
+      html += '<tr><td style="padding:6px 8px; border-bottom:1px solid var(--line);">' + e.name + '</td>' +
+        '<td style="padding:6px 8px; border-bottom:1px solid var(--line); direction:ltr; text-align:left;">' + e.user + '</td>' +
+        '<td style="padding:6px 8px; border-bottom:1px solid var(--line); direction:ltr; text-align:left; font-family:monospace;">' + e.pass + '</td></tr>';
+    });
+    html += '</table>';
+    var content = document.getElementById('pw-content');
+    content.innerHTML = html;
+    content.style.display = 'block';
+    document.getElementById('pw-gate').style.display = 'none';
+    if (window.refreshOpenAccordion) window.refreshOpenAccordion(content);
+  }
+
+  document.getElementById('pw-reveal-btn').addEventListener('click', function () {
+    var input = window.prompt('קוד גישה:');
+    if (input === PASSPHRASE) {
+      var data = JSON.parse(decodeURIComponent(escape(window.atob(encoded))));
+      render(data);
+    } else if (input !== null) {
+      alert('קוד שגוי');
+    }
+  });
+})();
+</script>
+
+<footer class="site-footer">
+  צוות ה-AI · Studio Wizdi
+</footer>
+
+</body>
+</html>
