@@ -307,6 +307,27 @@ img { max-width: 100%; display: block; }
   margin: 14px 0;
 }
 
+.prompt-box-wrap { position: relative; margin: 14px 0; }
+.prompt-box-wrap .prompt-box { margin: 0; padding-top: 44px; }
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  z-index: 2;
+  border: none;
+  background: rgba(255,255,255,0.14);
+  color: #eaf6ff;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.copy-btn:hover { background: rgba(255,255,255,0.26); }
+.copy-btn.copied { background: #2e7d32; color: #fff; }
+
 .badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
 .badge {
   padding: 6px 14px;

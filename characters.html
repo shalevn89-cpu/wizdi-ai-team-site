@@ -141,7 +141,10 @@
 
     <p class="char-section-label">שילוב בסרטוני וידאו (Google Flow)</p>
     <p>עדכון: אנחנו לא מייצרים יותר סרטונים שטוחים בסגנון וקטורי-ציורי. הסרטונים כיום הם <strong>תלת-מימד בסגנון פיקסאר, והדמויות מופיעות בהם בפועל</strong>. הפרומפט הבסיסי לסגנון:</p>
-    <div class="prompt-box">High quality 3D animation, consistent character appearance, cinematic lighting</div>
+    <div class="prompt-box-wrap">
+      <button class="copy-btn" type="button" onclick="copyPromptBox(this)">📋 העתק</button>
+      <div class="prompt-box">High quality 3D animation, consistent character appearance, cinematic lighting</div>
+    </div>
 
     <div class="badge-row">
       <span class="badge">🎨 תמיד תלת-ממד</span>
@@ -158,5 +161,6 @@
   צוות ה-AI · Studio Wizdi
 </footer>
 
+<script src="js/copy.js"></script>
 </body>
 </html>

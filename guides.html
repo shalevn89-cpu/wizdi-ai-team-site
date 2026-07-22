@@ -278,12 +278,33 @@
 
         <p class="char-section-label">הפרומפט הקבוע לעיצוב הדמות באינפוגרפיקה</p>
         <p>זהו פרומפט הבסיס לסגנון התלת-ממד שלנו באינפוגרפיקות. <strong>לפני השימוש, יש להוסיף בסופו את תיאור הדמות</strong> הרלוונטית מעמוד <a href="characters.html">דמויות וקולות</a> (השדה "תיאור" בכרטיס של כל דמות).</p>
-        <div class="prompt-box">Modern educational editorial illustration, premium 3D animated character, Pixar/Disney-inspired (not an exact franchise), soft rounded stylized proportions, expressive face with large warm eyes, subtle smile, smooth skin, highly polished CGI rendering. Clean minimal composition with a soft light-blue gradient background and a large white circular backdrop behind the character. Bright, diffused studio lighting, soft ambient shadows, gentle global illumination, crisp edges, premium educational textbook aesthetic. Everyday objects rendered in semi-realistic 3D with clean geometry and realistic materials while maintaining a friendly cartoon appearance. Floating minimalist science-themed line icons in monochromatic light blue around the composition. Plenty of negative space, centered composition, harmonious color palette, high-end educational infographic style, clean, modern, uncluttered, visually appealing for middle-school science education. Ultra-high resolution, sharp focus, subtle depth of field, no photorealism, no excessive textures, no clutter.</div>
+        <div class="prompt-box-wrap">
+          <button class="copy-btn" type="button" onclick="copyPromptBox(this)">📋 העתק</button>
+          <div class="prompt-box">Modern educational editorial illustration, premium 3D animated character, Pixar/Disney-inspired (not an exact franchise), soft rounded stylized proportions, expressive face with large warm eyes, subtle smile, smooth skin, highly polished CGI rendering. Clean minimal composition with a soft light-blue gradient background and a large white circular backdrop behind the character. Bright, diffused studio lighting, soft ambient shadows, gentle global illumination, crisp edges, premium educational textbook aesthetic. Everyday objects rendered in semi-realistic 3D with clean geometry and realistic materials while maintaining a friendly cartoon appearance. Floating minimalist science-themed line icons in monochromatic light blue around the composition. Plenty of negative space, centered composition, harmonious color palette, high-end educational infographic style, clean, modern, uncluttered, visually appealing for middle-school science education. Ultra-high resolution, sharp focus, subtle depth of field, no photorealism, no excessive textures, no clutter.</div>
+        </div>
 
         <p class="char-section-label" style="margin-top:22px;">דוגמה</p>
         <p>אינפוגרפיקה על שינויי מצב ולחץ, עם רותם - לפי הפרומפט למעלה + תיאור הדמות שלה.</p>
         <img src="assets/infographics/example-pressure-mass.png" alt="דוגמת אינפוגרפיקה - שינויי מצב ולחץ, עם רותם" style="width:100%; border-radius: var(--radius); margin-top:8px;" />
 
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item panel">
+    <div class="accordion-header">
+      <button class="accordion-toggle" type="button" aria-expanded="false">
+        <span class="accordion-title">🃏 פרומפט לכרטיסיות לימודיות</span>
+        <span class="accordion-chevron">▾</span>
+      </button>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-body-inner">
+        <p>פרומפט קבוע לעיצוב כרטיסיות מידע - סטייל שטוח (Flat) ונקי, בלי דמות, עם כותרת, איור וקטורי ופאנל הסבר. יש להוסיף/להחליף רק את הכותרת, האיור והטקסט בהתאם לתוכן הספציפי.</p>
+        <div class="prompt-box-wrap">
+          <button class="copy-btn" type="button" onclick="copyPromptBox(this)">📋 העתק</button>
+          <div class="prompt-box">Clean flat 2D educational editorial infographic card design. Modern minimalist layout, square 1:1 format. Soft light-blue background (#EAF6FF). A large white rounded rectangle card centered on the canvas with generous padding, smooth 28–32 px rounded corners, subtle soft drop shadow, and plenty of white space. At the top of the card: a dark royal-blue rounded title banner (#123EAF) with bold Hebrew Rubik font (RTL layout). Thin decorative underline beneath the main title. Inside the card: clean vector-style illustration area with no character. Use simple flat illustrations and educational icons only. Blue line icons, soft navy outlines, minimal color palette with selective accents (orange for heat, green for positive change, burgundy for emphasis, light blue for water or gas). No text bubbles. Below the illustration: a white explanation panel with a thin light-blue border and rounded corners, containing concise Hebrew text in Rubik font. Clear spacing between title, illustration, and explanation. Overall appearance: • Premium educational textbook infographic • Flat vector editorial style • RTL composition • Clean geometry • Rounded shapes throughout • Soft subtle shadows only • Consistent margins and alignment • Bright, airy design • No textures • No photorealism • No heavy gradients • No glossy effects • No 3D elements • No clutter Color palette: - Background: #EAF6FF - Main blue: #123EAF - White cards: #FFFFFF - Light border: #D9EAFB - Accent colors only where needed (orange, green, burgundy) Style keywords: clean educational infographic, flat vector, editorial illustration, modern science textbook, minimal UI card, rounded cards, premium classroom design, Hebrew RTL layout, Rubik font, soft shadows, white space, consistent iconography.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -385,5 +406,6 @@
   צוות ה-AI · Studio Wizdi
 </footer>
 
+<script src="js/copy.js"></script>
 </body>
 </html>
